@@ -1,7 +1,12 @@
 import pytest
+import yaml
 
 from test2.Calculator import Calculator
-from test2.test_calc import get_param
+
+def get_param():
+    with open("conf/param.yml",encoding='utf-8') as f: #mac默认是utf-8，而win默认是gbk，所有win执行需加encoding='utf-8'
+        param = yaml.safe_load(f) #safe_load 将utf-8转换为unicode，用hook函数把unicode编码成utf8然后再解码成中文编码
+    return param
 
 #fixture实现set up和tear down
 @pytest.fixture(scope='class')
@@ -36,6 +41,7 @@ def pytest_collection_modifyitems(session, config, items: list):
     print("这是收集所有测试用例的方法")
     print(items)
     items.reverse()
+    #用hook函数把unicode编码成utf8然后再解码成中文编码
     for item in items:
         item.name = item.name.encode('utf-8').decode('unicode-escape')
         print(item.name)
