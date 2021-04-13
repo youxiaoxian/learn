@@ -49,7 +49,7 @@ div_float:
   -
     - 0.1
     - 0
-    - False
+    - false
 ids:
   - '小数'
   - '大数'

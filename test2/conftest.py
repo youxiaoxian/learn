@@ -1,12 +1,12 @@
 import pytest
-import yaml
-
+# import yaml
+from test2.common import get_param
 from test2.Calculator import Calculator
 
-def get_param():
-    with open("conf/param.yml",encoding='utf-8') as f: #mac默认是utf-8，而win默认是gbk，所有win执行需加encoding='utf-8'
-        param = yaml.safe_load(f) #safe_load 将utf-8转换为unicode，用hook函数把unicode编码成utf8然后再解码成中文编码
-    return param
+# def get_param():
+#     with open("conf/param.yml",encoding='utf-8') as f: #mac默认是utf-8，而win默认是gbk，所有win执行需加encoding='utf-8'
+#         param = yaml.safe_load(f) #safe_load 将utf-8转换为unicode，用hook函数把unicode编码成utf8然后再解码成中文编码
+#     return param
 
 #fixture实现set up和tear down
 @pytest.fixture(scope='class')
