@@ -1,5 +1,4 @@
 from decimal import Decimal
-
 import allure
 import pytest
 import yaml
@@ -9,13 +8,18 @@ def get_param():
         param = yaml.safe_load(f) #safe_load 将utf-8转换为unicode，用hook函数把unicode编码成utf8然后再解码成中文编码
     return param
 
+class TestDemo():
 
-@allure.feature("计算器")
+    @allure.story('test1')
+    def test_with_epic_1(self):
+        pass
+
+@allure.feature('计算器')
 class TestCal:
 
-    # @pytest.mark.second
+    @pytest.mark.second
     @pytest.mark.run(order=2)
-    @allure.story("整数相加")
+    @allure.story('整数相加')
     def test_add_int(self, get_add_int_param_calc, inicalc_class):
         assert get_add_int_param_calc[2] == inicalc_class.add(get_add_int_param_calc[0], get_add_int_param_calc[1])
 
