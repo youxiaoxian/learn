@@ -30,3 +30,14 @@ def get_div_int_param_calc(request):
 @pytest.fixture(params=get_param()['div_float'], ids=get_param()['ids'])
 def get_div_float_param_calc(request):
     return request.param
+
+#hook函数
+def pytest_collection_modifyitems(session, config, items: list):
+    print("这是收集所有测试用例的方法")
+    print(items)
+    items.reverse()
+    for item in items:
+        item.name = item.name.encode('utf-8').decode('unicode-escape')
+        print(item.name)
+        item._nodeid = item._nodeid.encode('utf-8').decode('unicode-escape')
+        print(item._nodeid)

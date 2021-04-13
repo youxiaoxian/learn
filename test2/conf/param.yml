@@ -51,6 +51,6 @@ div_float:
     - 0
     - False
 ids:
-  - 'small'
-  - 'big'
-  - 'zero'
+  - '小数'
+  - '大数'
+  - '零'
