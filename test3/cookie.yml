@@ -1,0 +1,8 @@
+- domain: 192.168.7.147
+  expiry: 1621148970
+  httpOnly: true
+  name: grafana_session
+  path: /
+  sameSite: Lax
+  secure: false
+  value: 1cf1b572bc3547058d5c0298b452b593
