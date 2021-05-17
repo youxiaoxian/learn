@@ -10,7 +10,8 @@ class Events:
         if "http://192.168.7.147:22000/apis/topicinfo/getpagelist?topicid=" in flow.request.url:
             old_data = json.loads(flow.response.text)
             new_data = self.recursion(old_data,2)
-            #返回给客户端
+            # 返回给客户端
+            # json.dumps 序列化时对中文默认使用的ascii编码.想输出真正的中文需要指定ensure_ascii=False
             flow.response.text = json.dumps(new_data,ensure_ascii=False)
 
     def recursion(self, base_data, int_data = 1):
