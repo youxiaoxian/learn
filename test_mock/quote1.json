@@ -1,0 +1,54 @@
+{
+  "data": {
+    "items": [
+      {
+        "market": {
+          "status_id": 8,
+          "region": "CN"
+        },
+        "quote": {
+          "name": "test111",
+          "current": 35.65,
+          "percent": 4.12
+        },
+        "others": {
+          "cyb_switch": true
+        },
+        "tags": [1,2,3]
+      },
+      {
+        "market": {
+          "status_id": 8,
+          "region": "CN"
+        },
+        "quote": {
+          "name": "test222",
+          "current": 2009.85,
+          "percent": 1.95
+        },
+        "others": {
+          "cyb_switch": true
+        },
+        "tags": []
+      },
+      {
+        "market": {
+          "status_id": 8,
+          "region": "CN"
+        },
+        "quote": {
+          "name": "test333",
+          "current": 71.18,
+          "percent": 2.95
+        },
+        "others": {
+          "cyb_switch": true
+        },
+        "tags": []
+      }
+    ],
+    "items_size": 3
+  },
+  "error_code": 0,
+  "error_description": ""
+}
