@@ -2,6 +2,7 @@ import json
 def recursion(base_data, int_data =1):
     """
     :param base_data: 原始的数据
+    :param int_data: 倍增的倍数
     :return: 在原始数据基础之上，修改float 类型，对float 类型做数据翻倍操作
     """
     #
