@@ -8,8 +8,8 @@ class Events:
         """
         #匹配规则
         if "http://192.168.7.147:22000/apis/topicinfo/getpagelist?topicid=" in flow.request.url:
-            base_data = json.loads(flow.response.text)
-            new_data = self.recursion(base_data,2)
+            old_data = json.loads(flow.response.text)
+            new_data = self.recursion(old_data,2)
             #返回给客户端
             flow.response.text = json.dumps(new_data,ensure_ascii=False)
 
