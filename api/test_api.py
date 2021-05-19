@@ -11,6 +11,7 @@ class TestAPI:
             "curpage": "1",
             "pagesize": "50"
         }
+        print(type(data))
         # headers = {
         #     'Content-Type': 'application/json'
         # }
