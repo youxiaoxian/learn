@@ -31,7 +31,7 @@ class ReadExcel(Excel):
 class WriteExcel(Excel):
     def __init__(self):
         super().__init__()
-        self.column = GetCol().GetRow()
+        self.column = self.sheet.max_column + 1
     def write_title(self):
         self.sheet.cell(1, self.column).value = 'result'
         self.workbook.save(file_path)
@@ -39,16 +39,12 @@ class WriteExcel(Excel):
         self.sheet.cell(i+1, self.column).value = result
         self.workbook.save(file_path)
 
-class GetCol(Excel):
-    def GetRow(self):
-        column = self.sheet.max_column + 1
-        return column
-
 @allure.story('正常测试用例')
-class TestGwsummaryanalysis:
-    def test_Gwana(self):
-        cases = ReadExcel().read_excel()
-        write=WriteExcel()
+class TestAnalysis:
+    def test_analysis(self):
+        read = ReadExcel()
+        cases = read.read_excel()
+        write = WriteExcel()
         write.write_title()
         for case in cases:
             url = case['host'] + case['path']
