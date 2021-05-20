@@ -33,10 +33,12 @@ class WriteExcel(Excel):
         super().__init__()
         self.column = self.sheet.max_column + 1
     def write_title(self):
-        self.sheet.cell(1, self.column).value = 'result'
+        self.sheet.cell(1, self.column).value = 'status_code'
+        self.sheet.cell(1, self.column+1).value = 'result'
         self.workbook.save(file_path)
-    def write_result(self,i,result):
-        self.sheet.cell(i+1, self.column).value = result
+    def write_result(self,case_num,status_code,result):
+        self.sheet.cell(case_num + 1, self.column).value = status_code
+        self.sheet.cell(case_num + 1, self.column+1).value = result
         self.workbook.save(file_path)
 
 @allure.story('正常测试用例')
@@ -54,6 +56,6 @@ class TestAnalysis:
             case_num = case['case_num']
             response = requests.request(method=httpmethod, url=url, json=data)
             assert response.status_code == code
+            status_code = response.status_code
             result=json.dumps(response.json(),indent=2,ensure_ascii=False)
-            # result=response.status_code
-            write.write_result(case_num,result)
+            write.write_result(case_num,status_code,result)
