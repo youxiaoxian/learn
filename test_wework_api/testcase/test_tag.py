@@ -47,17 +47,29 @@ class TestWework:
         r = self.tag.get_tag()
         assert tag_name_new in jsonpath(r.json(), '$..name')
 
+    # @pytest.mark.run(order=4)
+    # @pytest.mark.parametrize('tag_name_list', [["test","test112"]])
+    # def test_delete_tag(self, tag_name_list):
+    #     tag_id_list = self.tag.get_tag_id_list(tag_name_list)
+    #     # print(tag_id_list)
+    #     r = self.tag.delete_tag(tag_id_list)
+    #     # print(r)
+    #     assert r.json()['errcode'] == 0
+    #     r = self.tag.get_tag()
+    #     for tag_id in tag_id_list:
+    #         # print(tag_id)
+    #         # 判断删除的内容是否已经消失在search结果里
+    #         # $..*所有元素
+    #         assert tag_id not in jsonpath(r.json(),'$..*')
+
     @pytest.mark.run(order=4)
     @pytest.mark.parametrize('tag_name_list', [["test","test112"]])
     def test_delete_tag(self, tag_name_list):
-        tag_id_list = self.tag.get_tag_id_list(tag_name_list)
-        # print(tag_id_list)
+        tag_id_list = self.tag.get_tag_id_list_2(tag_name_list)
         r = self.tag.delete_tag(tag_id_list)
-        # print(r)
         assert r.json()['errcode'] == 0
         r = self.tag.get_tag()
         for tag_id in tag_id_list:
-            # print(tag_id)
             # 判断删除的内容是否已经消失在search结果里
             # $..*所有元素
             assert tag_id not in jsonpath(r.json(),'$..*')

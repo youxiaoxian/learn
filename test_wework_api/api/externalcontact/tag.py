@@ -103,3 +103,18 @@ class Tag(WeWork):
                     if tag_name_list[k] == tags[i][j]['name']:
                         tag_id_list.append(tags[i][j]['id'])
         return tag_id_list
+
+    # 根据tag_name_list获取tag_id_list，通过jsonpath
+    def get_tag_id_list_2(self,tag_name_list):
+        r = self.get_tag()
+        tag_id_list = []
+        for tag_name in tag_name_list:
+            # jsonpath返回结果为列表，[0]取出列表中的字符串
+            tag_id_list.append(jsonpath(r.json(), f"$..tag[?(@.name=='{tag_name}')].id")[0])
+        return tag_id_list
+
+        # jsonpath https://blog.csdn.net/lwg_1540652358/article/details/84111339
+        # [?(< expression >)] 过滤表达式。 表达式必须求值为一个布尔值。
+        # .< name > 点，表示子节点
+        # jsonpath返回结果为列表，[0]取出列表中的字符串
+        # print(jsonpath(r, f"$..tag[?(@.name=='NAME1')].id")[0])
