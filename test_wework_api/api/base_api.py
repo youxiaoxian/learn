@@ -1,4 +1,5 @@
 import json
+import logging
 
 import requests
 
@@ -14,7 +15,7 @@ class BaseApi:
     def http_request(self,data):
         r = requests.request(**data)
         # 换成logging
-        # print(json.dumps(r.json(), indent=2, ensure_ascii=False))
+        logging.info(json.dumps(r.json(), indent=2, ensure_ascii=False))
         return r
 
     def rpc_request(self,data):
