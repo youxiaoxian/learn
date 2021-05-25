@@ -37,11 +37,14 @@ class TestMember:
         assert userid in jsonpath(r.json(), '$..userid')
 
     @allure.title("创建成员")
-    @pytest.mark.parametrize('userid,name,mobile,department',[['zhangsan1','zhangsan1','13900000000',[1,2]]])
+    @pytest.mark.parametrize('userid,name,mobile,department',[['zhangsan1','zhangsan1','13900000000',[3]]])
     def test_add_member_mustache(self,userid,name,mobile,department):
         r = self.member.add_member_mustache(userid,name,mobile,department)
         assert r.json()['errcode'] == 0
         assert r.json()['errmsg'] == "created"
+
+        r = self.member.get_department_member(3, 0)
+        assert userid in jsonpath(r.json(), '$..userid')
 
 
 

@@ -1,14 +1,23 @@
-2021-05-25 16:12:12 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
-2021-05-25 16:12:12 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?', 'method': 'get', 'params': {'corpid': 'ww782d957a1dfa5f5f', 'corpsecret': 'zQtwpLtp5SWVvX4zLJvapfoTNeWIatsxbcxkkz1mzGw'}}
-2021-05-25 16:12:12 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+2021-05-25 16:26:05 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-25 16:26:05 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?', 'method': 'get', 'params': {'corpid': 'ww782d957a1dfa5f5f', 'corpsecret': 'zQtwpLtp5SWVvX4zLJvapfoTNeWIatsxbcxkkz1mzGw'}}
+2021-05-25 16:26:05 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
   "errcode": 0,
   "errmsg": "ok",
   "access_token": "TIKDXdgnC7fl9BpepNPHlOvzdiiPiqgU-NzMJi3xAWoa9q-1MF2lMDw2JxDupR8t_g0JVCOocMiAlpknwbARdw7ABNLXk-o1AcfcNjwdqGoSFXHSZzzzMWpweMuHctIsIzsmRoHA3lPOMcGv1S1OVmme1YnT8pe2RL6p2iVY-jw2JViickQOno4xHPCY-vzcSaCzWUdD1fKN2dKkrf26GQ",
   "expires_in": 7200
 }
-2021-05-25 16:12:12 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
-2021-05-25 16:12:12 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/create?', 'method': 'POST', 'params': {'access_token': 'TIKDXdgnC7fl9BpepNPHlOvzdiiPiqgU-NzMJi3xAWoa9q-1MF2lMDw2JxDupR8t_g0JVCOocMiAlpknwbARdw7ABNLXk-o1AcfcNjwdqGoSFXHSZzzzMWpweMuHctIsIzsmRoHA3lPOMcGv1S1OVmme1YnT8pe2RL6p2iVY-jw2JViickQOno4xHPCY-vzcSaCzWUdD1fKN2dKkrf26GQ'}, 'json': {'userid': 'zhangsan1', 'name': 'zhangsan1', 'alias': 'jackzhang', 'mobile': '13900000000', 'department': [1, 2], 'position': '产品经理', 'gender': '1', 'email': 'zhangsan@gzdev.com', 'enable': 1, 'telephone': '020-123456'}}
-2021-05-25 16:12:12 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+2021-05-25 16:26:05 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-25 16:26:05 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?', 'method': 'GET', 'params': {'access_token': 'TIKDXdgnC7fl9BpepNPHlOvzdiiPiqgU-NzMJi3xAWoa9q-1MF2lMDw2JxDupR8t_g0JVCOocMiAlpknwbARdw7ABNLXk-o1AcfcNjwdqGoSFXHSZzzzMWpweMuHctIsIzsmRoHA3lPOMcGv1S1OVmme1YnT8pe2RL6p2iVY-jw2JViickQOno4xHPCY-vzcSaCzWUdD1fKN2dKkrf26GQ', 'department_id': 3, 'fetch_child': 0}}
+2021-05-25 16:26:05 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
   "errcode": 0,
-  "errmsg": "created"
+  "errmsg": "ok",
+  "userlist": [
+    {
+      "userid": "zhangsan1",
+      "name": "zhangsan1",
+      "department": [
+        3
+      ]
+    }
+  ]
 }
