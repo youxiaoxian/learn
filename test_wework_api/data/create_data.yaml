@@ -3,7 +3,7 @@
   "name": "{{name}}",
   "alias": "jackzhang",
   "mobile": "{{mobile}}",
-  "department": [1],
+  "department": "{{department}}",
   "position": "产品经理",
   "gender": "1",
   "email": "zhangsan@gzdev.com",

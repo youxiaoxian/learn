@@ -77,7 +77,15 @@ class Member(WeWork):
         body["userid"] = pystache.render(body["userid"], template)
         body["name"] = pystache.render(body["name"], template)
         body["mobile"] = pystache.render(body["mobile"], template)
-        # body["department"] = pystache.render(body["department"], template)
+        # 结果为字符串str类型'[1, 2]'
+        a = pystache.render(body["department"], template)
+        # 将字符串转为列表['1', ' 2']
+        b = a[1:len(a) - 1].strip(',').split(',')
+        # 将列表中的字符转换为int，最后拼接成list
+        body["department"] = []
+        for i in b:
+            d = int(i)
+            body["department"].append(d)
         r = self.http_request(data)
         self.save(data, r)
         return r
