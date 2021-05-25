@@ -12,6 +12,7 @@ class TestAPI:
             "curpage": "{{curpage}}",
             "pagesize": "50"
         }
+        print(type(data))
         with open("data.yaml", encoding="UTF-8") as f:
             yaml_datas = yaml.safe_load(f)
             print(yaml_datas)

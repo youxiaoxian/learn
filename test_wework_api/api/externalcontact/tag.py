@@ -1,3 +1,6 @@
+import json
+
+import allure
 import requests
 from jsonpath import jsonpath
 
@@ -6,6 +9,7 @@ from test_wework_api.api.wework_api import WeWork
 
 class Tag(WeWork):
 
+    @allure.step("获取标签")
     def get_tag(self):
         data = {
             "url": "https://qyapi.weixin.qq.com/cgi-bin/externalcontact/get_corp_tag_list?",
@@ -16,8 +20,10 @@ class Tag(WeWork):
             "json": {}
         }
         r = self.http_request(data)
+        self.save(data, r)
         return r
 
+    @allure.step("增加标签")
     def add_tag(self, group_name, tag_list, **kwargs):
         if 'json' in kwargs:
             json_data = kwargs['json']
@@ -35,8 +41,10 @@ class Tag(WeWork):
             "json": json_data
         }
         r = self.http_request(data)
+        self.save(data, r)
         return r
 
+    @allure.step("编辑标签")
     def edit_tag(self, tag_id, tag_name):
         json_data = {
             "id": tag_id,
@@ -51,8 +59,10 @@ class Tag(WeWork):
             "json": json_data
         }
         r = self.http_request(data)
+        self.save(data, r)
         return r
 
+    @allure.step("删除标签")
     def delete_tag(self, tag_id_list):
         data = {
             "url": "https://qyapi.weixin.qq.com/cgi-bin/externalcontact/del_corp_tag?",
@@ -65,18 +75,21 @@ class Tag(WeWork):
             }
         }
         r = self.http_request(data)
+        self.save(data, r)
         return r
 
     # 清理所有tag
+    @allure.step("清理所有标签")
     def clear(self):
         r = self.get_tag()
         # 获取所有tag_id
-        #tag_id_list = [tag['id'] for group in r.json()['tag_group'] for tag in group['tag']]
+        # tag_id_list = [tag['id'] for group in r.json()['tag_group'] for tag in group['tag']]
         tag_id_list = jsonpath(r.json(), '$..tag[*].id')
         r = self.delete_tag(tag_id_list)
         return r
 
     # 根据tag_name获取tag_id
+    @allure.step("根据tag_name获取tag_id")
     def get_tag_id(self, tag_name):
         r = self.get_tag()
         # tags 二维数组
@@ -91,6 +104,7 @@ class Tag(WeWork):
         return tag_id
 
     # 根据tag_name_list获取tag_id_list
+    @allure.step("根据tag_name_list获取tag_id_list")
     def get_tag_id_list(self, tag_name_list):
         r = self.get_tag()
         tag_id_list = []
@@ -105,7 +119,8 @@ class Tag(WeWork):
         return tag_id_list
 
     # 根据tag_name_list获取tag_id_list，通过jsonpath
-    def get_tag_id_list_2(self,tag_name_list):
+    @allure.step("根据tag_name_list获取tag_id_list，通过jsonpath")
+    def get_tag_id_list_2(self, tag_name_list):
         r = self.get_tag()
         tag_id_list = []
         for tag_name in tag_name_list:
@@ -118,3 +133,4 @@ class Tag(WeWork):
         # .< name > 点，表示子节点
         # jsonpath返回结果为列表，[0]取出列表中的字符串
         # print(jsonpath(r, f"$..tag[?(@.name=='NAME1')].id")[0])
+

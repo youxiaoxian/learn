@@ -1,0 +1,14 @@
+2021-05-25 14:33:14 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-25 14:33:14 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?', 'method': 'get', 'params': {'corpid': 'ww782d957a1dfa5f5f', 'corpsecret': 'zQtwpLtp5SWVvX4zLJvapfoTNeWIatsxbcxkkz1mzGw'}}
+2021-05-25 14:33:14 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "ok",
+  "access_token": "jffawCQ1Az7aNro46Kp2Ol5HJ014AYlX4A-aZRNgkT0MQU3nQsraOd0m0xOsVjb52-K23JT8vD4h-X85a6sdIMLBraSE5jNY9nQ3PANQhwZ6xD9taEdlBL2HZeDUayRgAjJ4NDaWpAgxjnrXJGImw14pBIn9aNcMkgoIdcnIHZrIUF3wTRNPpM3QygnrSYiGuonZmOiQhq4LOlJTxlSTkw",
+  "expires_in": 7200
+}
+2021-05-25 14:34:01 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-25 14:34:01 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/create?', 'method': 'POST', 'params': {'access_token': 'jffawCQ1Az7aNro46Kp2Ol5HJ014AYlX4A-aZRNgkT0MQU3nQsraOd0m0xOsVjb52-K23JT8vD4h-X85a6sdIMLBraSE5jNY9nQ3PANQhwZ6xD9taEdlBL2HZeDUayRgAjJ4NDaWpAgxjnrXJGImw14pBIn9aNcMkgoIdcnIHZrIUF3wTRNPpM3QygnrSYiGuonZmOiQhq4LOlJTxlSTkw'}, 'json': {'userid': 'zhangsan1', 'name': 'zhangsan1', 'alias': 'jackzhang', 'mobile': '13900000000', 'department': [1], 'position': '产品经理', 'gender': '1', 'email': 'zhangsan@gzdev.com', 'enable': 1, 'telephone': '020-123456'}}
+2021-05-25 14:34:02 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "created"
+}
