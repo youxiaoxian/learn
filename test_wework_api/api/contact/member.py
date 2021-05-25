@@ -77,6 +77,7 @@ class Member(WeWork):
         body["userid"] = pystache.render(body["userid"], template)
         body["name"] = pystache.render(body["name"], template)
         body["mobile"] = pystache.render(body["mobile"], template)
+        # body["department"] = pystache.render(body["department"], template)
         r = self.http_request(data)
         self.save(data, r)
         return r
