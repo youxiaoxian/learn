@@ -1,13 +1,15 @@
 import allure
 import pystache
 import yaml
+from jsonpath import jsonpath
 
 from test_wework_api.api.wework_api import WeWork
+
 
 class Member(WeWork):
 
     @allure.step("读取成员")
-    def get_member(self,userid):
+    def get_member(self, userid):
         data = {
             "url": "https://qyapi.weixin.qq.com/cgi-bin/user/get?",
             "method": "GET",
@@ -21,7 +23,7 @@ class Member(WeWork):
         return r
 
     @allure.step("创建成员")
-    def add_member(self,userid,name,mobile,department):
+    def add_member(self, userid, name, mobile, department):
         data = {
             "url": "https://qyapi.weixin.qq.com/cgi-bin/user/create?",
             "method": "POST",
@@ -40,7 +42,7 @@ class Member(WeWork):
         return r
 
     @allure.step("获取部门成员")
-    def get_department_member(self,department_id,FETCH_CHILD):
+    def get_department_member(self, department_id, FETCH_CHILD):
         data = {
             "url": "https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?",
             "method": "GET",
@@ -55,8 +57,8 @@ class Member(WeWork):
         self.save(data, r)
         return r
 
-    @allure.step("创建成员,mustache方法")
-    def add_member_mustache(self,userid,name,mobile,department):
+    @allure.step("创建成员,mustache框架")
+    def add_member_mustache(self, userid, name, mobile, department):
         with open("../data/create_data.yaml", encoding="UTF-8") as f:
             body = yaml.safe_load(f)
         data = {
@@ -67,7 +69,7 @@ class Member(WeWork):
             },
             "json": body
         }
-        template=  {
+        template = {
             "userid": userid,
             "name": name,
             "mobile": mobile,
@@ -88,4 +90,45 @@ class Member(WeWork):
             body["department"].append(d)
         r = self.http_request(data)
         self.save(data, r)
+        return r
+
+    @allure.step("删除成员")
+    def delete_member(self, userid):
+        data = {
+            "url": "https://qyapi.weixin.qq.com/cgi-bin/user/delete?",
+            "method": "GET",
+            "params": {
+                "access_token": self.token,
+                "userid": userid
+            }
+        }
+        r = self.http_request(data)
+        self.save(data, r)
+        return r
+
+    @allure.step("批量删除成员")
+    def delete_all_member(self, useridlist):
+        data = {
+            "url": "https://qyapi.weixin.qq.com/cgi-bin/user/batchdelete?",
+            "method": "POST",
+            "params": {
+                "access_token": self.token
+            },
+            "json": {
+                "useridlist": useridlist
+            }
+        }
+        r = self.http_request(data)
+        self.save(data, r)
+        return r
+
+    @allure.step("数据清理")
+    def clear(self):
+        r = self.get_department_member(1, 1)
+        useridlist = jsonpath(r.json(), '$..userid')
+        useridlist_excludemy = []
+        for userid in useridlist:
+            if userid != 'DaXia':
+                useridlist_excludemy.append(userid)
+        r = self.delete_all_member(useridlist_excludemy)
         return r
