@@ -16,11 +16,11 @@ class TestDemo:
     def test_cookie(self):
         self.driver.get("http://192.168.7.147:22000/")
         _cookies = {
-            'ab_sr': '1.0.0_MzcxMTJlNTFiYzE4ZmU0NDMwOGIxMTZjMzQxMzVhYmJjMmQ4Y2ExNTZkMjMxYzdjNTI0NjQ1YjkwNTc5ZDIzMTdjODE2ZmZiYWRiZGYxNTcyZWVlYzA0NDk0ZTdiNmQ4',
-            'sidebarStatus': '0',
-            'BAIDUID_BFESS': '1B77139D0F8498A770AD52B542337C20:FG=1',
+            'ab_sr': '1.0.0_ODY2OTk3MzlmYTQyNWZhZmRjMDZiZTUxMDFjNDdjZjkyNzRiZTdhOGYzNWUwOTBkYzM5NTdjMDk4MjkzNGMxODNlNGM2MGNiOTIyNzNhMTE2NTEzMDY3OWQ5YTUxNWZh',
+            'sidebarStatus': '1',
+            'BAIDUID_BFESS': 'E62227FA57A07EEC3211F067C032DB99:FG=1',
             'Admin-Token': '%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F',
-            'shiro.session': '1fc735d2-d0fd-4b5e-be04-b026e367bf5d'
+            'shiro.session': 'c00799f7-313c-48c1-b17b-edc2fb1c6f95'
         }
         cookie_list = []
         for k, v in _cookies.items():

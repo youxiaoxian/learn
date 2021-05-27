@@ -5,7 +5,7 @@ import pytest
 @allure.feature('计算器')
 class TestCal:
 
-    @pytest.mark.second
+    # @pytest.mark.second
     @pytest.mark.run(order=2)
     @allure.story('整数相加')
     def test_add_int(self, get_add_int_param_calc, inicalc_class):

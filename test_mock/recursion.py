@@ -18,7 +18,7 @@ class Events:
         """
         :param base_data: 原始的数据
         :param int_data: 倍增的倍数
-        :return: 在原始数据基础之上，修改float 类型，对float 类型做数据翻倍操作
+        :return: 在原始数据基础之上，修改int 类型，对int 类型做数据翻倍操作
         """
         #
         if isinstance(base_data, dict):
@@ -39,7 +39,7 @@ class Events:
                 self.recursion(i, int_data)
             # [self.recursion(i, int_data) for i in base_data]
         elif isinstance(base_data, int):
-            # 对浮点型做倍增
+            # 对int型做倍增
             base_data = base_data * int_data
         else:
             base_data = base_data
@@ -53,6 +53,6 @@ if __name__ == '__main__':
     from mitmproxy.tools.main import mitmdump
     # 使用debug模式启动mitmdump
     # mitmdump(['-p', '8080', '-s', __file__])
-    # mitmdump -p 8080 -s /Users/lixu/project/hogwarts/HogwartsSDET18/test_mock/mitm_s.py
+    # mitmdump -p 8080 -s C:\Users\admin\PycharmProjects\pythondemo\test_mock\recursion.py
     # 端口需要使用字符串
     mitmdump(['-p', '8888', "-s", __file__])
