@@ -47,23 +47,21 @@ class TestMember:
         r = self.member.get_department_member(3, 0)
         assert userid in jsonpath(r.json(), '$..userid')
 
-    # @allure.title("成功删除成员")
-    # @pytest.mark.parametrize('userid',['zhangsan1'])
-    # def test_delete_member(self,userid):
-    #     r = self.member.delete_member(userid)
-    #     assert r.json()['errcode'] == 0
-    #     assert r.json()['errmsg'] == "deleted"
-    #
-    #     r = self.member.get_department_member(1, 1)
-    #     assert userid not in jsonpath(r.json(), '$..userid')
-    #     # print(jsonpath(r.json(), '$..userid'))
+    @allure.title("成功删除成员")
+    @pytest.mark.skip(reason="这个测试用例暂时不执行")
+    @pytest.mark.parametrize('userid',['zhangsan1'])
+    def test_delete_member(self,userid):
+        r = self.member.delete_member(userid)
+        assert r.json()['errcode'] == 0
+        assert r.json()['errmsg'] == "deleted"
+
+        r = self.member.get_department_member(1, 1)
+        assert userid not in jsonpath(r.json(), '$..userid')
+        # print(jsonpath(r.json(), '$..userid'))
 
     @allure.title("成功批量删除成员")
     @pytest.mark.parametrize('useridlist',[['zhangsan1', 'zhangsan']])
     def test_delete_all_member(self,useridlist):
-        print(useridlist)
-        r = self.member.get_department_member(1, 1)
-        print(jsonpath(r.json(), '$..userid'))
         r = self.member.delete_all_member(useridlist)
         assert r.json()['errcode'] == 0
         assert r.json()['errmsg'] == "deleted"

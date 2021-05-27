@@ -20,7 +20,7 @@ class WeWork(BaseApi):
         assert r.status_code == 200
         self.token = r.json()['access_token']
 
-    @allure.step("请求数据和响应结果")
+    @allure.step("请求数据和响应结果的保存")
     def save(self, data, r):
         allure.attach(f"{json.dumps(data, indent=2, ensure_ascii=False)}", "请求的数据", attachment_type=allure.attachment_type.TEXT)
         allure.attach(f"{json.dumps(r.json(), indent=2, ensure_ascii=False)}", "响应的数据",

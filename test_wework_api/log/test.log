@@ -1,14 +1,199 @@
-2021-05-27 11:48:10 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
-2021-05-27 11:48:10 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?', 'method': 'get', 'params': {'corpid': 'ww782d957a1dfa5f5f', 'corpsecret': 'zQtwpLtp5SWVvX4zLJvapfoTNeWIatsxbcxkkz1mzGw'}}
-2021-05-27 11:48:10 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+2021-05-27 15:07:59 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:07:59 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?', 'method': 'get', 'params': {'corpid': 'ww782d957a1dfa5f5f', 'corpsecret': 'XzWffUR_06xA1rktB3uCGkToykg88RrJCySCJAY39D0'}}
+2021-05-27 15:07:59 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
   "errcode": 0,
   "errmsg": "ok",
-  "access_token": "z4EYGQDrDvB4kaHc3G1JpSoXyMVxHtVvqo39Xqf_iSScuBCeYMjHpiXpoC-V1XpR0xn6syr8KjuK6L5UQAFJOCOGMIN5bz3cDyrUfTtXkBSktpU8wd-a_hbZKb2p41HMOjanHiPI0HBQltwyihg6rcQIUYuYR6yHpqiKsk4NnJrSKgiMU8laSn15HdJ1cyicRwqW-XCGsWIcnr-zkXCpZQ",
+  "access_token": "Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg",
   "expires_in": 7200
 }
-2021-05-27 11:48:10 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
-2021-05-27 11:48:10 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?', 'method': 'GET', 'params': {'access_token': 'z4EYGQDrDvB4kaHc3G1JpSoXyMVxHtVvqo39Xqf_iSScuBCeYMjHpiXpoC-V1XpR0xn6syr8KjuK6L5UQAFJOCOGMIN5bz3cDyrUfTtXkBSktpU8wd-a_hbZKb2p41HMOjanHiPI0HBQltwyihg6rcQIUYuYR6yHpqiKsk4NnJrSKgiMU8laSn15HdJ1cyicRwqW-XCGsWIcnr-zkXCpZQ', 'department_id': 1, 'fetch_child': 1}}
-2021-05-27 11:48:10 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+2021-05-27 15:07:59 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:07:59 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/externalcontact/get_corp_tag_list?', 'method': 'post', 'params': {'access_token': 'Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg'}, 'json': {}}
+2021-05-27 15:07:59 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "ok",
+  "tag_group": []
+}
+2021-05-27 15:08:00 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:00 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/externalcontact/del_corp_tag?', 'method': 'post', 'params': {'access_token': 'Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg'}, 'json': {'tag_id': False}}
+2021-05-27 15:08:00 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 41017,
+  "errmsg": "Warning: wrong json format. missing tagid, hint: [1622099280_203_a52640b9b01922928f30fc02016427ec], from ip: 122.231.133.140, more info at https://open.work.weixin.qq.com/devtool/query?e=41017"
+}
+2021-05-27 15:08:00 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:00 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/externalcontact/get_corp_tag_list?', 'method': 'post', 'params': {'access_token': 'Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg'}, 'json': {}}
+2021-05-27 15:08:00 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "ok",
+  "tag_group": []
+}
+2021-05-27 15:08:00 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:00 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/externalcontact/add_corp_tag?', 'method': 'post', 'params': {'access_token': 'Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg'}, 'json': {'group_name': 'test0521001_group1', 'tag': [{'name': 'test111'}, {'name': 'test112'}]}}
+2021-05-27 15:08:00 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "ok",
+  "tag_group": {
+    "group_id": "etxhlLCwAAyt3iOIvu_qFFPGK8YQg-iA",
+    "group_name": "test0521001_group1",
+    "create_time": 1622099280,
+    "tag": [
+      {
+        "id": "etxhlLCwAA3J2Pn-xfgFahW2leWCKv1A",
+        "name": "test111",
+        "create_time": 1622099280,
+        "order": 0
+      },
+      {
+        "id": "etxhlLCwAAQ1lzRxIi8UZ-XDd45MRCcg",
+        "name": "test112",
+        "create_time": 1622099280,
+        "order": 0
+      }
+    ],
+    "order": 0
+  }
+}
+2021-05-27 15:08:01 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:01 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/externalcontact/get_corp_tag_list?', 'method': 'post', 'params': {'access_token': 'Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg'}, 'json': {}}
+2021-05-27 15:08:01 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "ok",
+  "tag_group": [
+    {
+      "group_id": "etxhlLCwAAyt3iOIvu_qFFPGK8YQg-iA",
+      "group_name": "test0521001_group1",
+      "create_time": 1622099280,
+      "tag": [
+        {
+          "id": "etxhlLCwAA3J2Pn-xfgFahW2leWCKv1A",
+          "name": "test111",
+          "create_time": 1622099280,
+          "order": 0
+        },
+        {
+          "id": "etxhlLCwAAQ1lzRxIi8UZ-XDd45MRCcg",
+          "name": "test112",
+          "create_time": 1622099280,
+          "order": 0
+        }
+      ],
+      "order": 0
+    }
+  ]
+}
+2021-05-27 15:08:01 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:01 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/externalcontact/get_corp_tag_list?', 'method': 'post', 'params': {'access_token': 'Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg'}, 'json': {}}
+2021-05-27 15:08:01 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "ok",
+  "tag_group": [
+    {
+      "group_id": "etxhlLCwAAyt3iOIvu_qFFPGK8YQg-iA",
+      "group_name": "test0521001_group1",
+      "create_time": 1622099280,
+      "tag": [
+        {
+          "id": "etxhlLCwAA3J2Pn-xfgFahW2leWCKv1A",
+          "name": "test111",
+          "create_time": 1622099280,
+          "order": 0
+        },
+        {
+          "id": "etxhlLCwAAQ1lzRxIi8UZ-XDd45MRCcg",
+          "name": "test112",
+          "create_time": 1622099280,
+          "order": 0
+        }
+      ],
+      "order": 0
+    }
+  ]
+}
+2021-05-27 15:08:01 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:01 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/externalcontact/edit_corp_tag?', 'method': 'post', 'params': {'access_token': 'Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg'}, 'json': {'id': 'etxhlLCwAA3J2Pn-xfgFahW2leWCKv1A', 'name': 'test'}}
+2021-05-27 15:08:01 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "ok"
+}
+2021-05-27 15:08:02 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:02 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/externalcontact/get_corp_tag_list?', 'method': 'post', 'params': {'access_token': 'Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg'}, 'json': {}}
+2021-05-27 15:08:02 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "ok",
+  "tag_group": [
+    {
+      "group_id": "etxhlLCwAAyt3iOIvu_qFFPGK8YQg-iA",
+      "group_name": "test0521001_group1",
+      "create_time": 1622099280,
+      "tag": [
+        {
+          "id": "etxhlLCwAA3J2Pn-xfgFahW2leWCKv1A",
+          "name": "test",
+          "create_time": 1622099280,
+          "order": 0
+        },
+        {
+          "id": "etxhlLCwAAQ1lzRxIi8UZ-XDd45MRCcg",
+          "name": "test112",
+          "create_time": 1622099280,
+          "order": 0
+        }
+      ],
+      "order": 0
+    }
+  ]
+}
+2021-05-27 15:08:02 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:02 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/externalcontact/get_corp_tag_list?', 'method': 'post', 'params': {'access_token': 'Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg'}, 'json': {}}
+2021-05-27 15:08:02 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "ok",
+  "tag_group": [
+    {
+      "group_id": "etxhlLCwAAyt3iOIvu_qFFPGK8YQg-iA",
+      "group_name": "test0521001_group1",
+      "create_time": 1622099280,
+      "tag": [
+        {
+          "id": "etxhlLCwAA3J2Pn-xfgFahW2leWCKv1A",
+          "name": "test",
+          "create_time": 1622099280,
+          "order": 0
+        },
+        {
+          "id": "etxhlLCwAAQ1lzRxIi8UZ-XDd45MRCcg",
+          "name": "test112",
+          "create_time": 1622099280,
+          "order": 0
+        }
+      ],
+      "order": 0
+    }
+  ]
+}
+2021-05-27 15:08:02 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:02 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/externalcontact/del_corp_tag?', 'method': 'post', 'params': {'access_token': 'Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg'}, 'json': {'tag_id': ['etxhlLCwAA3J2Pn-xfgFahW2leWCKv1A', 'etxhlLCwAAQ1lzRxIi8UZ-XDd45MRCcg']}}
+2021-05-27 15:08:02 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "ok"
+}
+2021-05-27 15:08:03 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:03 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/externalcontact/get_corp_tag_list?', 'method': 'post', 'params': {'access_token': 'Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg'}, 'json': {}}
+2021-05-27 15:08:03 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "ok",
+  "tag_group": []
+}
+2021-05-27 15:08:03 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:03 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?', 'method': 'get', 'params': {'corpid': 'ww782d957a1dfa5f5f', 'corpsecret': 'zQtwpLtp5SWVvX4zLJvapfoTNeWIatsxbcxkkz1mzGw'}}
+2021-05-27 15:08:03 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "ok",
+  "access_token": "j4EEtkIzyvm1TWoCfug7q89RhBDYU0qyuwtgQHg_rRRfvb8gNcrCaMgy6ahk0BkjGxI2_pPYqagZN1sg7tDPcHyl3MUPQg31qAHtsOGeFrsnl5xZcZr44sodnVmvunFMsfm81ommj6US8Tpjo7KPfVnEobfLCN5fX5eF0_Tc6zpIrKzrYB7gi4f5K_wgr1gDsHRcGYOC611TzwleC62-5w",
+  "expires_in": 7200
+}
+2021-05-27 15:08:04 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:04 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?', 'method': 'GET', 'params': {'access_token': 'j4EEtkIzyvm1TWoCfug7q89RhBDYU0qyuwtgQHg_rRRfvb8gNcrCaMgy6ahk0BkjGxI2_pPYqagZN1sg7tDPcHyl3MUPQg31qAHtsOGeFrsnl5xZcZr44sodnVmvunFMsfm81ommj6US8Tpjo7KPfVnEobfLCN5fX5eF0_Tc6zpIrKzrYB7gi4f5K_wgr1gDsHRcGYOC611TzwleC62-5w', 'department_id': 1, 'fetch_child': 1}}
+2021-05-27 15:08:04 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
   "errcode": 0,
   "errmsg": "ok",
   "userlist": [
@@ -18,25 +203,18 @@
       "department": [
         1
       ]
-    },
-    {
-      "userid": "zhangsan1",
-      "name": "zhangsan1",
-      "department": [
-        3
-      ]
     }
   ]
 }
-2021-05-27 11:48:12 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
-2021-05-27 11:48:12 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/batchdelete?', 'method': 'POST', 'params': {'access_token': 'z4EYGQDrDvB4kaHc3G1JpSoXyMVxHtVvqo39Xqf_iSScuBCeYMjHpiXpoC-V1XpR0xn6syr8KjuK6L5UQAFJOCOGMIN5bz3cDyrUfTtXkBSktpU8wd-a_hbZKb2p41HMOjanHiPI0HBQltwyihg6rcQIUYuYR6yHpqiKsk4NnJrSKgiMU8laSn15HdJ1cyicRwqW-XCGsWIcnr-zkXCpZQ'}, 'json': {'useridlist': ['zhangsan1']}}
-2021-05-27 11:48:12 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
-  "errcode": 0,
-  "errmsg": "deleted"
+2021-05-27 15:08:05 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:05 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/batchdelete?', 'method': 'POST', 'params': {'access_token': 'j4EEtkIzyvm1TWoCfug7q89RhBDYU0qyuwtgQHg_rRRfvb8gNcrCaMgy6ahk0BkjGxI2_pPYqagZN1sg7tDPcHyl3MUPQg31qAHtsOGeFrsnl5xZcZr44sodnVmvunFMsfm81ommj6US8Tpjo7KPfVnEobfLCN5fX5eF0_Tc6zpIrKzrYB7gi4f5K_wgr1gDsHRcGYOC611TzwleC62-5w'}, 'json': {'useridlist': []}}
+2021-05-27 15:08:05 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 40063,
+  "errmsg": "some parameters are empty, hint: [1622099285_148_8745329b6490a8bffb9119145577b59b], from ip: 122.231.133.140, more info at https://open.work.weixin.qq.com/devtool/query?e=40063"
 }
-2021-05-27 11:48:12 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
-2021-05-27 11:48:12 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/get?', 'method': 'GET', 'params': {'access_token': 'z4EYGQDrDvB4kaHc3G1JpSoXyMVxHtVvqo39Xqf_iSScuBCeYMjHpiXpoC-V1XpR0xn6syr8KjuK6L5UQAFJOCOGMIN5bz3cDyrUfTtXkBSktpU8wd-a_hbZKb2p41HMOjanHiPI0HBQltwyihg6rcQIUYuYR6yHpqiKsk4NnJrSKgiMU8laSn15HdJ1cyicRwqW-XCGsWIcnr-zkXCpZQ', 'userid': 'DaXia'}}
-2021-05-27 11:48:12 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+2021-05-27 15:08:05 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:05 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/get?', 'method': 'GET', 'params': {'access_token': 'j4EEtkIzyvm1TWoCfug7q89RhBDYU0qyuwtgQHg_rRRfvb8gNcrCaMgy6ahk0BkjGxI2_pPYqagZN1sg7tDPcHyl3MUPQg31qAHtsOGeFrsnl5xZcZr44sodnVmvunFMsfm81ommj6US8Tpjo7KPfVnEobfLCN5fX5eF0_Tc6zpIrKzrYB7gi4f5K_wgr1gDsHRcGYOC611TzwleC62-5w', 'userid': 'DaXia'}}
+2021-05-27 15:08:05 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
   "errcode": 0,
   "errmsg": "ok",
   "userid": "DaXia",
@@ -73,9 +251,9 @@
   "address": "",
   "thumb_avatar": "http://wework.qpic.cn/bizmail/gXKXVMndyNibojZjaBPP7bqJ8TO0TepiaOnsKkUuRkSrIpfLXBG5vFrQ/100"
 }
-2021-05-27 11:48:12 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
-2021-05-27 11:48:12 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?', 'method': 'GET', 'params': {'access_token': 'z4EYGQDrDvB4kaHc3G1JpSoXyMVxHtVvqo39Xqf_iSScuBCeYMjHpiXpoC-V1XpR0xn6syr8KjuK6L5UQAFJOCOGMIN5bz3cDyrUfTtXkBSktpU8wd-a_hbZKb2p41HMOjanHiPI0HBQltwyihg6rcQIUYuYR6yHpqiKsk4NnJrSKgiMU8laSn15HdJ1cyicRwqW-XCGsWIcnr-zkXCpZQ', 'department_id': [1], 'fetch_child': 1}}
-2021-05-27 11:48:12 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+2021-05-27 15:08:05 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:05 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?', 'method': 'GET', 'params': {'access_token': 'j4EEtkIzyvm1TWoCfug7q89RhBDYU0qyuwtgQHg_rRRfvb8gNcrCaMgy6ahk0BkjGxI2_pPYqagZN1sg7tDPcHyl3MUPQg31qAHtsOGeFrsnl5xZcZr44sodnVmvunFMsfm81ommj6US8Tpjo7KPfVnEobfLCN5fX5eF0_Tc6zpIrKzrYB7gi4f5K_wgr1gDsHRcGYOC611TzwleC62-5w', 'department_id': [1], 'fetch_child': 1}}
+2021-05-27 15:08:05 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
   "errcode": 0,
   "errmsg": "ok",
   "userlist": [
@@ -88,43 +266,43 @@
     }
   ]
 }
-2021-05-27 11:48:13 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
-2021-05-27 11:48:13 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/create?', 'method': 'POST', 'params': {'access_token': 'z4EYGQDrDvB4kaHc3G1JpSoXyMVxHtVvqo39Xqf_iSScuBCeYMjHpiXpoC-V1XpR0xn6syr8KjuK6L5UQAFJOCOGMIN5bz3cDyrUfTtXkBSktpU8wd-a_hbZKb2p41HMOjanHiPI0HBQltwyihg6rcQIUYuYR6yHpqiKsk4NnJrSKgiMU8laSn15HdJ1cyicRwqW-XCGsWIcnr-zkXCpZQ'}, 'json': {'userid': 'zhangsan', 'name': 'zhangsan', 'mobile': '13800000000', 'department': [1]}}
-2021-05-27 11:48:13 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+2021-05-27 15:08:06 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:06 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/create?', 'method': 'POST', 'params': {'access_token': 'j4EEtkIzyvm1TWoCfug7q89RhBDYU0qyuwtgQHg_rRRfvb8gNcrCaMgy6ahk0BkjGxI2_pPYqagZN1sg7tDPcHyl3MUPQg31qAHtsOGeFrsnl5xZcZr44sodnVmvunFMsfm81ommj6US8Tpjo7KPfVnEobfLCN5fX5eF0_Tc6zpIrKzrYB7gi4f5K_wgr1gDsHRcGYOC611TzwleC62-5w'}, 'json': {'userid': 'zhangsan', 'name': 'zhangsan', 'mobile': '13800000000', 'department': [1]}}
+2021-05-27 15:08:06 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
   "errcode": 0,
   "errmsg": "created"
 }
-2021-05-27 11:48:13 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
-2021-05-27 11:48:13 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?', 'method': 'GET', 'params': {'access_token': 'z4EYGQDrDvB4kaHc3G1JpSoXyMVxHtVvqo39Xqf_iSScuBCeYMjHpiXpoC-V1XpR0xn6syr8KjuK6L5UQAFJOCOGMIN5bz3cDyrUfTtXkBSktpU8wd-a_hbZKb2p41HMOjanHiPI0HBQltwyihg6rcQIUYuYR6yHpqiKsk4NnJrSKgiMU8laSn15HdJ1cyicRwqW-XCGsWIcnr-zkXCpZQ', 'department_id': 1, 'fetch_child': 0}}
-2021-05-27 11:48:13 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+2021-05-27 15:08:06 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:06 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?', 'method': 'GET', 'params': {'access_token': 'j4EEtkIzyvm1TWoCfug7q89RhBDYU0qyuwtgQHg_rRRfvb8gNcrCaMgy6ahk0BkjGxI2_pPYqagZN1sg7tDPcHyl3MUPQg31qAHtsOGeFrsnl5xZcZr44sodnVmvunFMsfm81ommj6US8Tpjo7KPfVnEobfLCN5fX5eF0_Tc6zpIrKzrYB7gi4f5K_wgr1gDsHRcGYOC611TzwleC62-5w', 'department_id': 1, 'fetch_child': 0}}
+2021-05-27 15:08:06 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
   "errcode": 0,
   "errmsg": "ok",
   "userlist": [
-    {
-      "userid": "DaXia",
-      "name": "测试",
-      "department": [
-        1
-      ]
-    },
     {
       "userid": "zhangsan",
       "name": "zhangsan",
       "department": [
         1
       ]
+    },
+    {
+      "userid": "DaXia",
+      "name": "测试",
+      "department": [
+        1
+      ]
     }
   ]
 }
-2021-05-27 11:48:13 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
-2021-05-27 11:48:13 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/create?', 'method': 'POST', 'params': {'access_token': 'z4EYGQDrDvB4kaHc3G1JpSoXyMVxHtVvqo39Xqf_iSScuBCeYMjHpiXpoC-V1XpR0xn6syr8KjuK6L5UQAFJOCOGMIN5bz3cDyrUfTtXkBSktpU8wd-a_hbZKb2p41HMOjanHiPI0HBQltwyihg6rcQIUYuYR6yHpqiKsk4NnJrSKgiMU8laSn15HdJ1cyicRwqW-XCGsWIcnr-zkXCpZQ'}, 'json': {'userid': 'zhangsan1', 'name': 'zhangsan1', 'alias': 'jackzhang', 'mobile': '13900000000', 'department': [3], 'position': '产品经理', 'gender': '1', 'email': 'zhangsan@gzdev.com', 'enable': 1, 'telephone': '020-123456'}}
-2021-05-27 11:48:13 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+2021-05-27 15:08:06 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:06 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/create?', 'method': 'POST', 'params': {'access_token': 'j4EEtkIzyvm1TWoCfug7q89RhBDYU0qyuwtgQHg_rRRfvb8gNcrCaMgy6ahk0BkjGxI2_pPYqagZN1sg7tDPcHyl3MUPQg31qAHtsOGeFrsnl5xZcZr44sodnVmvunFMsfm81ommj6US8Tpjo7KPfVnEobfLCN5fX5eF0_Tc6zpIrKzrYB7gi4f5K_wgr1gDsHRcGYOC611TzwleC62-5w'}, 'json': {'userid': 'zhangsan1', 'name': 'zhangsan1', 'alias': 'jackzhang', 'mobile': '13900000000', 'department': [3], 'position': '产品经理', 'gender': '1', 'email': 'zhangsan@gzdev.com', 'enable': 1, 'telephone': '020-123456'}}
+2021-05-27 15:08:06 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
   "errcode": 0,
   "errmsg": "created"
 }
-2021-05-27 11:48:13 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
-2021-05-27 11:48:13 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?', 'method': 'GET', 'params': {'access_token': 'z4EYGQDrDvB4kaHc3G1JpSoXyMVxHtVvqo39Xqf_iSScuBCeYMjHpiXpoC-V1XpR0xn6syr8KjuK6L5UQAFJOCOGMIN5bz3cDyrUfTtXkBSktpU8wd-a_hbZKb2p41HMOjanHiPI0HBQltwyihg6rcQIUYuYR6yHpqiKsk4NnJrSKgiMU8laSn15HdJ1cyicRwqW-XCGsWIcnr-zkXCpZQ', 'department_id': 3, 'fetch_child': 0}}
-2021-05-27 11:48:13 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+2021-05-27 15:08:07 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:07 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?', 'method': 'GET', 'params': {'access_token': 'j4EEtkIzyvm1TWoCfug7q89RhBDYU0qyuwtgQHg_rRRfvb8gNcrCaMgy6ahk0BkjGxI2_pPYqagZN1sg7tDPcHyl3MUPQg31qAHtsOGeFrsnl5xZcZr44sodnVmvunFMsfm81ommj6US8Tpjo7KPfVnEobfLCN5fX5eF0_Tc6zpIrKzrYB7gi4f5K_wgr1gDsHRcGYOC611TzwleC62-5w', 'department_id': 3, 'fetch_child': 0}}
+2021-05-27 15:08:07 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
   "errcode": 0,
   "errmsg": "ok",
   "userlist": [
@@ -137,44 +315,15 @@
     }
   ]
 }
-2021-05-27 11:48:14 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
-2021-05-27 11:48:14 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?', 'method': 'GET', 'params': {'access_token': 'z4EYGQDrDvB4kaHc3G1JpSoXyMVxHtVvqo39Xqf_iSScuBCeYMjHpiXpoC-V1XpR0xn6syr8KjuK6L5UQAFJOCOGMIN5bz3cDyrUfTtXkBSktpU8wd-a_hbZKb2p41HMOjanHiPI0HBQltwyihg6rcQIUYuYR6yHpqiKsk4NnJrSKgiMU8laSn15HdJ1cyicRwqW-XCGsWIcnr-zkXCpZQ', 'department_id': 1, 'fetch_child': 1}}
-2021-05-27 11:48:14 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
-  "errcode": 0,
-  "errmsg": "ok",
-  "userlist": [
-    {
-      "userid": "DaXia",
-      "name": "测试",
-      "department": [
-        1
-      ]
-    },
-    {
-      "userid": "zhangsan",
-      "name": "zhangsan",
-      "department": [
-        1
-      ]
-    },
-    {
-      "userid": "zhangsan1",
-      "name": "zhangsan1",
-      "department": [
-        3
-      ]
-    }
-  ]
-}
-2021-05-27 11:48:14 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
-2021-05-27 11:48:14 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/batchdelete?', 'method': 'POST', 'params': {'access_token': 'z4EYGQDrDvB4kaHc3G1JpSoXyMVxHtVvqo39Xqf_iSScuBCeYMjHpiXpoC-V1XpR0xn6syr8KjuK6L5UQAFJOCOGMIN5bz3cDyrUfTtXkBSktpU8wd-a_hbZKb2p41HMOjanHiPI0HBQltwyihg6rcQIUYuYR6yHpqiKsk4NnJrSKgiMU8laSn15HdJ1cyicRwqW-XCGsWIcnr-zkXCpZQ'}, 'json': {'useridlist': ['zhangsan1', 'zhangsan']}}
-2021-05-27 11:48:14 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+2021-05-27 15:08:07 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:07 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/batchdelete?', 'method': 'POST', 'params': {'access_token': 'j4EEtkIzyvm1TWoCfug7q89RhBDYU0qyuwtgQHg_rRRfvb8gNcrCaMgy6ahk0BkjGxI2_pPYqagZN1sg7tDPcHyl3MUPQg31qAHtsOGeFrsnl5xZcZr44sodnVmvunFMsfm81ommj6US8Tpjo7KPfVnEobfLCN5fX5eF0_Tc6zpIrKzrYB7gi4f5K_wgr1gDsHRcGYOC611TzwleC62-5w'}, 'json': {'useridlist': ['zhangsan1', 'zhangsan']}}
+2021-05-27 15:08:07 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
   "errcode": 0,
   "errmsg": "deleted"
 }
-2021-05-27 11:48:15 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
-2021-05-27 11:48:15 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?', 'method': 'GET', 'params': {'access_token': 'z4EYGQDrDvB4kaHc3G1JpSoXyMVxHtVvqo39Xqf_iSScuBCeYMjHpiXpoC-V1XpR0xn6syr8KjuK6L5UQAFJOCOGMIN5bz3cDyrUfTtXkBSktpU8wd-a_hbZKb2p41HMOjanHiPI0HBQltwyihg6rcQIUYuYR6yHpqiKsk4NnJrSKgiMU8laSn15HdJ1cyicRwqW-XCGsWIcnr-zkXCpZQ', 'department_id': 1, 'fetch_child': 1}}
-2021-05-27 11:48:15 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+2021-05-27 15:08:07 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:07 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/simplelist?', 'method': 'GET', 'params': {'access_token': 'j4EEtkIzyvm1TWoCfug7q89RhBDYU0qyuwtgQHg_rRRfvb8gNcrCaMgy6ahk0BkjGxI2_pPYqagZN1sg7tDPcHyl3MUPQg31qAHtsOGeFrsnl5xZcZr44sodnVmvunFMsfm81ommj6US8Tpjo7KPfVnEobfLCN5fX5eF0_Tc6zpIrKzrYB7gi4f5K_wgr1gDsHRcGYOC611TzwleC62-5w', 'department_id': 1, 'fetch_child': 1}}
+2021-05-27 15:08:07 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
   "errcode": 0,
   "errmsg": "ok",
   "userlist": [
@@ -186,4 +335,25 @@
       ]
     }
   ]
+}
+2021-05-27 15:08:08 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:08 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?', 'method': 'get', 'params': {'corpid': 'ww782d957a1dfa5f5f', 'corpsecret': 'XzWffUR_06xA1rktB3uCGkToykg88RrJCySCJAY39D0'}}
+2021-05-27 15:08:08 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "ok",
+  "access_token": "Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg",
+  "expires_in": 7200
+}
+2021-05-27 15:08:08 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:08 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/externalcontact/get_corp_tag_list?', 'method': 'post', 'params': {'access_token': 'Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg'}, 'json': {}}
+2021-05-27 15:08:08 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 0,
+  "errmsg": "ok",
+  "tag_group": []
+}
+2021-05-27 15:08:08 - base_api.py - base_api - http_request - 19 - INFO - 调用http_request请求
+2021-05-27 15:08:08 - base_api.py - base_api - http_request - 20 - INFO - 请求的数据为{'url': 'https://qyapi.weixin.qq.com/cgi-bin/externalcontact/del_corp_tag?', 'method': 'post', 'params': {'access_token': 'Q-N2ZxyrSpgAR98rJh6lO9KwllI5Ht8uJDcORBCtTIWKg8HUJU4JhHwXgh4qv2RCNOkBd9ZdFJx_KBVcJelgnKz1yyt0zxNMPREEUaNmdds8hSygSDNYMwviD6ju5TxIETf_In6r771R_twlh-1fWQ_hVZcoxiUXEdNZNAAXx4vLTKxEbXY5BDMR2U6ARZ0cho8oE9hg2ZNMz-2YMEQASg'}, 'json': {'tag_id': False}}
+2021-05-27 15:08:08 - base_api.py - base_api - http_request - 21 - INFO - 返回的数据为{
+  "errcode": 41017,
+  "errmsg": "Warning: wrong json format. missing tagid, hint: [1622099288_203_969f51ec99e88cf411e7e7631dac0d1f], from ip: 122.231.133.140, more info at https://open.work.weixin.qq.com/devtool/query?e=41017"
 }
